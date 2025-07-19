@@ -1,5 +1,5 @@
 import React from "react";
-import Search from "../common/Search";
+import Search from "../atoms/Search";
 
 interface HeaderProps {
   searchTerm: string;

@@ -1,7 +1,7 @@
 import React from "react";
 import type { Movie } from "../../../types/movie";
 import MovieCard from "./MovieCard";
-import Spinner from "../../../components/common/Spinner";
+import Spinner from "../../../components/atoms/Spinner";
 
 interface MovieListProps {
   movies: Movie[];

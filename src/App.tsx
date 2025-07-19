@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "./components/layout/Header";
+import { Outlet } from "react-router";
+import Header from "./components/layouts/Header";
 import TrendingMovies from "./features/movies/components/TrendingMovies";
 import MovieList from "./features/movies/components/MovieList";
 import { useMovies } from "./hooks/useMovies";
@@ -19,6 +20,7 @@ const App = () => {
       <div className="pattern">
         <div className="wrapper">
           <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+          <Outlet />
           <TrendingMovies movies={trendingMovies} />
           <MovieList
             movies={movieList}
